@@ -1,11 +1,5 @@
 <html>
 
-<body onload="draw('c1')">
-<canvas id="c1">
-  Your browser doesn't support canvas label
-</canvas>
-</body>
-
 <script type="text/javascript">
 function draw(id) {
   //根据id查找对应的标签
@@ -31,7 +25,7 @@ function draw(id) {
 
   //设置组合方式
   context.globalCompositeOperation = oprtns[0];
-  
+
   //设置新图形-三角形
   context.beginPath();
   //设置路径起点坐标
@@ -48,5 +42,11 @@ function draw(id) {
 
 }
 </script>
+
+<body onload="draw('c1')">
+<canvas id="c1">
+  Your browser doesn't support canvas label
+</canvas>
+</body>
 
 </html>
